@@ -5,6 +5,23 @@
 
 body {
   display: grid;
+  justify-items: center;
   gap: 3rem;
-  background-color: #1B263B;
+  background-color: #0081A7;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
 }
