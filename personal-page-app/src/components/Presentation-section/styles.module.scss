@@ -65,3 +65,14 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .presentationSection {
+    grid-template-columns: 1fr;
+    gap: 3rem
+  }
+
+  .selfImage {
+    place-self: center;
+  }
+}
