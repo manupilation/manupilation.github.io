@@ -21,12 +21,14 @@
     p {
       font-size: 1rem;
       color: #FDFCDC;
+      letter-spacing: .09rem;
+
       a {
         color: #ff008e;
         font-weight: 700;
       }
       a:hover {
-        color: #222428;
+        color: #ee004a;
       }
     }
 
@@ -37,6 +39,7 @@
       place-self: end;
       color: #121214;
       border-radius: 4px;
+      letter-spacing: 0.07rem;
     }
 
     .projects:hover {
