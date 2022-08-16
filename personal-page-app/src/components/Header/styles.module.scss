@@ -12,3 +12,19 @@
     align-items: center;
   }
 }
+
+@media (max-width: 800px) {
+  .headerContainer {
+    padding: 2.5rem;
+
+    h1 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    padding: 2.5rem;
+  }
+}
