@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './styles.module.scss';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
+    <nav className={styles.navContainer}>
       <ul className={styles.navList}>
-        <a href="">Experiência</a>
-        <a href="">Formação</a>
-        <a href="">Projetos</a>
-        <a href="">Contato</a>
+        <Link to="/exp">Experiência</Link>
+        <Link to="/formacao">Formação</Link>
+        <Link to="/projects">Projetos</Link>
+        <Link to="/contact">Contato</Link>
       </ul>
     </nav>
   )

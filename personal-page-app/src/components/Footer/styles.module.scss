@@ -1,0 +1,27 @@
+.footerContainer {
+  background-color: #ffcd1e;
+  width: 100%;
+  display: flex;
+  gap: .7rem;
+  height: 80%;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: end;
+  align-self: end;
+
+  nav {
+    width: 50%;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    gap: .7rem;
+    justify-content: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
