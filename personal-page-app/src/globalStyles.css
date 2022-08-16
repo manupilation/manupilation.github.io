@@ -26,3 +26,9 @@ a {
   gap: 3rem;
   min-height: 100vh;
 }
+
+@media (max-width: 450px) {
+  #root {
+    gap: 10%;
+  }
+}

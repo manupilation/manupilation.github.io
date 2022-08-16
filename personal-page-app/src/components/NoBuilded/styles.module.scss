@@ -64,3 +64,43 @@
     background-color: #EEAA1E;
   }
 }
+
+@media (max-width: 560px) {
+  .noBuildContainer {
+    grid-template-columns: 1fr;
+    gap: 10px 20px;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+
+    div {
+      grid-column: 1;
+      justify-self: start;
+    }
+
+    .hojipago {
+      grid-area: 1 / 2;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .noBuildContainer {
+    max-width: 500px;
+
+    .hojipago {
+      grid-area: 3 / 1;
+      place-self: start;
+    }
+
+    .toBackButton {
+      grid-area: 4 / 1;
+    }
+  }
+}
