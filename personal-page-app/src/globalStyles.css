@@ -24,4 +24,5 @@ a {
   display: grid;
   justify-items: center;
   gap: 3rem;
+  min-height: 100vh;
 }
