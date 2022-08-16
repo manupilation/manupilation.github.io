@@ -1,0 +1,66 @@
+.noBuildContainer {
+  max-width: 800px;
+  display: grid;
+  background-color: #1b263b;
+  padding: 2rem;
+  border-radius: 4px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: #ffcd1e;
+  }
+
+  div {
+    max-width: 400px;
+    // place-self: center;
+    grid-column: 2 / 2;
+    justify-self: end;
+    
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .paragraph {
+    color: #fdfcdc;
+    grid-area: 2 / 1;
+    place-self: center;
+    max-width: 30ch;
+    place-self: start;
+
+    a {
+      color: #ff008e;
+    }
+  }
+
+  .hojipago {
+    color: #fdfcdc;
+    grid-area: 2 / 2;
+    place-self: end;
+
+    a {
+      color: #ff008e;
+    }
+  }
+
+  .toBackButton {
+    text-transform: uppercase;
+    padding: .7rem 1.4rem;
+    background-color: #ffcd1e;
+    place-self: end;
+    border-radius: 4px;
+    color: #222;
+  }
+
+  .toBackButton:hover {
+    background-color: #EEAA1E;
+  }
+}
