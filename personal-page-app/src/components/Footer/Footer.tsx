@@ -4,6 +4,13 @@ import styles from './styles.module.scss';
 function Footer() {
   return (
     <footer className={styles.footerContainer}>
+      <div className={styles.emails}>
+        <h3>manupilation.dev@gmail.com</h3>
+        <h3>emanoelmattos13@gmail.com</h3>
+      </div>
+      <div className={styles.copy}>
+        Todos os direitos declarados. ©
+      </div>
       <nav aria-label="redes-sociais">
         <ul>
           <a
