@@ -11,7 +11,7 @@ function NoBuildBody() {
         <p className={styles.paragraph}>Clique no botão 'voltar' e confira as outras seções.</p>
       </section>
       <div>
-        <img src="/public/ej-yao-D46mXLsQRJw-unsplash.jpg" alt="Foto de uma construção com maquinários em funcionamento." />
+        <img src="/images/ej-yao-D46mXLsQRJw-unsplash.jpg" alt="Foto de uma construção com maquinários em funcionamento." />
       </div>
       <Link className={styles.toBackButton} to="/">Voltar</Link>
       <p className={styles.hojipago}>Imagem por <a href="https://unsplash.com/es/@hojipago">@hojipago</a></p>
