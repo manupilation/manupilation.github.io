@@ -4,6 +4,8 @@
   background-color: #0D1B2A;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  height: 120px;
 
   h1 {
     font-size: 2rem;
@@ -20,11 +22,5 @@
     h1 {
       display: none;
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .headerContainer {
-    padding: 2.5rem;
   }
 }
