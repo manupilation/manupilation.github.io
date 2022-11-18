@@ -6,6 +6,8 @@
   border-radius: 4px;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  font-family: 'Montserrat';
+  margin: 40px 0;
 
   section {
     display: flex;
@@ -20,7 +22,6 @@
 
   div {
     max-width: 400px;
-    // place-self: center;
     grid-column: 2 / 2;
     justify-self: end;
     
