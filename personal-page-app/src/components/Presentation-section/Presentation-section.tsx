@@ -13,7 +13,7 @@ function PresentationSection() {
         rel="external">Projetos</a>
       </article>
       <div className={styles.selfImage}>
-        <img src="../images/Eur.jpg" alt="Foto de Manu"/> 
+        <img src="../../images/Eur.jpg" alt="Foto de Manu"/> 
       </div>
     </section>
   )
