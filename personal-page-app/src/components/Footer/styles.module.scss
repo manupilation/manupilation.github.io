@@ -58,3 +58,32 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .footerContainer {
+    .emails {
+      gap: 8px;
+    };
+
+    h3 {
+      font-size: .6rem;
+    };
+
+    .copy {
+      font-size: .6rem;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: auto;
+    height: max-content;
+    gap: 20px;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}
