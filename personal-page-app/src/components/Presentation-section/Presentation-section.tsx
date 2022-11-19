@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './styles.module.scss';
+import eu from '../../../images/Eur.jpg';
 
 function PresentationSection() {
   return (
@@ -13,7 +14,7 @@ function PresentationSection() {
         rel="external">Projetos</a>
       </article>
       <div className={styles.selfImage}>
-        <img src="/images/Eur.jpg" alt="Foto de Manu"/> 
+        <img src={eu} alt="Foto de Manu"/> 
       </div>
     </section>
   )
