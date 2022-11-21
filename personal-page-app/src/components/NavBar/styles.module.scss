@@ -1,3 +1,7 @@
+.navBar {
+  display: flex;
+}
+
 .navContainer {
   display: flex;
   height: auto;
@@ -48,3 +52,26 @@
     position: absolute;
   }
 }
+
+.menu {
+  display: none;
+  padding: .7rem 1rem;
+  font-family: 'Poppins', serif;
+  font-weight: 600;
+  background-color: var(--c-yw);
+  border-radius: 4px;
+  align-items: center;
+  place-self: center;
+}
+
+.menu::before {
+  content: '';
+  width: 16px;
+  height: 2px;
+  margin-right: 5px;
+  background-color: var(--c-b1);
+  display: inline-block;
+  box-shadow: 0 4px var(--c-b1), 0 -4px var(--c-b1);
+  transition: .2s;
+}
+
