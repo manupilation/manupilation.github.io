@@ -2,7 +2,10 @@ import React from 'react';
 import styles from './styles.module.scss';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function handleClick(event: React.MouseEvent<HTMLElement>) {
+  event.currentTarget.nextElementSibling?.classList.toggle(styles['active']);
+  event.currentTarget.classList.toggle(styles['active']);
+}
   return (
     <nav className={styles.navContainer}>
       <ul className={styles.navList}>
