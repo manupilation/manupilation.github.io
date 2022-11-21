@@ -6,6 +6,7 @@ function handleClick(event: React.MouseEvent<HTMLElement>) {
   event.currentTarget.nextElementSibling?.classList.toggle(styles['active']);
   event.currentTarget.classList.toggle(styles['active']);
 }
+
 function renderNavBar() {
   return (
     <div className={styles.navBar}>
@@ -21,6 +22,13 @@ function renderNavBar() {
     </div>
   );
 }
+
+function Navbar() {
+  return (
+    <>
+    { renderNavBar() }
+    </>
+  );
 }
 
 export default Navbar;
