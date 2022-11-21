@@ -17,10 +17,25 @@
 
 @media (max-width: 800px) {
   .headerContainer {
-    padding: 2.5rem;
+    h1 {
+      font-size: 2rem;
+      grid-column: 2;
+      place-self: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    align-items: center;
 
     h1 {
-      display: none;
+      font-size: 2rem;
+      grid-column: 2;
+      place-self: center;
     }
   }
 }
