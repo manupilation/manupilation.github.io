@@ -100,9 +100,25 @@
     grid-template-columns: auto;
     height: max-content;
     gap: 20px;
-  }
 
-  .copy {
-    text-align: center;
-  }
-}
+    nav[aria-label="redes-sociais"] {
+      grid-row: 1;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+      };
+    };
+
+    .emails {
+      h3 {
+        font-size: .6rem;
+      };
+    };
+
+    .copy {
+      font-size: .6rem;
+      grid-row: 3;
+      text-align: center;
+    };
+  };
+};
