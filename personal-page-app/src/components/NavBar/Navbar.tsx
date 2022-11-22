@@ -25,10 +25,13 @@ function useOutsideListener(ref: React.MutableRefObject<null | HTMLDivElement>) 
 }
 
 function renderNavBar() {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  useOutsideListener(wrapperRef);
+
   return (
-    <div className={styles.navBar}>
-      <button className={styles.menu} onClick={ handleClick }>MENU</button>
-      <nav className={styles.navContainer}>
+    <div className={styles.navBar} ref={wrapperRef}>
+      <button className={styles.menu} onClick={ handleClick } data-menu>MENU</button>
+      <nav className={styles.navContainer} data-menu>
         <ul className={styles.navList}>
           <Link to="/exp">Experiência</Link>
           <Link to="/formacao">Formação</Link>
