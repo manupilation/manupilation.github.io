@@ -70,6 +70,21 @@
   }
 }
 
+@media (max-width: 750px) {
+  .presentationSection {
+
+    article {
+      h2 {
+        font-size: 1.2rem;
+      };
+
+      p {
+        font-size: .7rem;
+      };
+    };
+  };
+};
+
 @media (max-width: 600px) {
   .presentationSection {
     grid-template-columns: 1fr;
