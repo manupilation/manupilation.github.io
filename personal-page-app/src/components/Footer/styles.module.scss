@@ -75,6 +75,25 @@
   }
 }
 
+@media (max-width: 550px) {
+  .footerContainer {
+    nav[aria-label="redes-sociais"] ul {
+      display: grid;
+      grid-template-columns: auto auto;
+    };
+
+    .emails {
+      h3 {
+        font-size: .4rem;
+      };
+    };
+  
+    .copy {
+      font-size: .4rem;
+    };
+  };
+};
+
 @media (max-width: 350px) {
   .footerContainer {
     display: grid;
