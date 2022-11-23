@@ -4,20 +4,20 @@
   background-color: #1b263b;
   padding: 2rem;
   border-radius: 4px;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 320px auto;
+  gap: 1.5rem;
   font-family: 'Montserrat';
   margin: 40px 0;
 
   section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
 
   h3 {
     font-size: 2rem;
     color: #ffcd1e;
+    margin-bottom: 20px;
   }
 
   div {
@@ -36,6 +36,7 @@
     place-self: center;
     max-width: 30ch;
     place-self: start;
+    margin-bottom: 10px;
 
     a {
       color: #ff008e;
@@ -56,11 +57,20 @@
     text-transform: uppercase;
     padding: .7rem 1.4rem;
     background-color: #ffcd1e;
-    place-self: end;
+    place-self: center;
     border-radius: 4px;
     color: #222;
     font-family: 'Poppins';
     font-weight: bold;
+  }
+
+  .toBackButton::before {
+    content: '⍇';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 1rem;
   }
 
   .toBackButton:hover {
