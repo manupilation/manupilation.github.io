@@ -78,6 +78,26 @@
   }
 }
 
+@media (max-width: 900px) {
+  .noBuildContainer {
+    grid-template-columns: 270px 300px;
+    gap: .7rem;
+
+    section {
+      h3 {
+        font-size: 1.4rem;
+      }
+  
+      .paragraph {
+        font-size: .8rem;
+      }
+    }
+    .hojipago {
+      font-size: .7rem;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .noBuildContainer {
     grid-template-columns: 1fr;
