@@ -98,6 +98,30 @@
   }
 }
 
+@media (max-width: 700px) {
+  .noBuildContainer {
+    grid-template-columns: 200px 250px;
+
+    section {
+      h3 {
+        font-size: 1rem;
+      }
+  
+      .paragraph {
+        font-size: .8rem;
+      }
+    }
+
+    .toBackButton,
+    .toBackButton::before {
+      font-size: .8rem;
+    }
+
+    .hojipago {
+      font-size: .5rem;
+    }
+  }
+}
 @media (max-width: 560px) {
   .noBuildContainer {
     grid-template-columns: 1fr;
