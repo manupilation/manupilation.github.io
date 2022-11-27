@@ -4,20 +4,20 @@
   background-color: #1b263b;
   padding: 2rem;
   border-radius: 4px;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 320px auto;
+  gap: 1.5rem;
   font-family: 'Montserrat';
   margin: 40px 0;
 
   section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
 
   h3 {
     font-size: 2rem;
     color: #ffcd1e;
+    margin-bottom: 20px;
   }
 
   div {
@@ -36,6 +36,7 @@
     place-self: center;
     max-width: 30ch;
     place-self: start;
+    margin-bottom: 10px;
 
     a {
       color: #ff008e;
@@ -56,11 +57,20 @@
     text-transform: uppercase;
     padding: .7rem 1.4rem;
     background-color: #ffcd1e;
-    place-self: end;
+    place-self: center;
     border-radius: 4px;
     color: #222;
     font-family: 'Poppins';
     font-weight: bold;
+  }
+
+  .toBackButton::before {
+    content: '⍇';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 1rem;
   }
 
   .toBackButton:hover {
@@ -68,42 +78,124 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 900px) {
   .noBuildContainer {
-    grid-template-columns: 1fr;
-    gap: 10px 20px;
+    grid-template-columns: 270px 300px;
+    gap: .7rem;
 
-    h3 {
-      font-size: 2.5rem;
+    section {
+      h3 {
+        font-size: 1.4rem;
+      }
+  
+      .paragraph {
+        font-size: .8rem;
+      }
+    }
+    .hojipago {
+      font-size: .7rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .noBuildContainer {
+    grid-template-columns: 200px 250px;
+
+    section {
+      h3 {
+        font-size: 1rem;
+      }
+  
+      .paragraph {
+        font-size: .8rem;
+      }
     }
 
-    p {
-      font-size: 1.8rem;
-    }
-
-
-    div {
-      grid-column: 1;
-      justify-self: start;
+    .toBackButton,
+    .toBackButton::before {
+      font-size: .8rem;
     }
 
     .hojipago {
-      grid-area: 1 / 2;
+      font-size: .5rem;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .noBuildContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+
+    section {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      h3 {
+        grid-column: 1 / -1;
+        max-width: 28ch;
+      }
+
+      .paragraph {
+        max-width: 16ch;
+        display: inline-block;
+      }
+    }
+
+    section p:nth-last-of-type(1) {
+      grid-column: 2 !important;
+    }
+
+    .toBackButton{
+      grid-column: 1 / -1;
+    }
+
+    div {
+      grid-column: 1 / -1;
+      max-width: 300px;
+      place-self: center;
+    }
+
+    .hojipago {
+      grid-area: 3 / 2;
     }
   }
 }
 
 @media (max-width: 420px) {
   .noBuildContainer {
-    max-width: 500px;
+    max-width: 250px;
+    padding: 1rem;
+    gap: 0;
 
-    .hojipago {
-      grid-area: 3 / 1;
-      place-self: start;
+    section p:nth-last-of-type(2) {
+      display: none;
     }
 
-    .toBackButton {
-      grid-area: 4 / 1;
+    section p:nth-last-of-type(1) {
+      max-width: 25ch;
+      grid-column: 1 / -1 !important;
+    }
+
+    div {
+      max-width: 220px;
+    }
+
+    .toBackButton,
+    .toBackButton::before {
+      font-size: .6rem;
+      margin-right: 0;
+      grid-column: 1;
+      place-self: start;
+      justify-self: center;
+    }
+
+    .hojipago {
+      place-self: start;
+      justify-self: end;
+      text-align: end;
     }
   }
 }
