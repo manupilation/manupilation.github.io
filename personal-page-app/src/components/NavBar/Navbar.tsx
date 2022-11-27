@@ -29,12 +29,12 @@ function renderNavBar() {
   useEffect(() => {
     if(ref.current?.attributes[1].value === 'true') {
       
-      document.body.addEventListener('touchstart', (event) => {
+      document.body.addEventListener('touchstart', function handleOutside(event) {
         setTimeout(() => {
           const menuButton = (event.target as HTMLElement).parentElement;
           if(menuButton !== ref.current) {
             ref.current?.querySelector('nav')?.classList.remove(styles['active']);
-            document.body.removeEventListener('touchstart', () => {});
+            document.body.removeEventListener('touchstart', handleOutside);
         }}, 75);
       });
     };
