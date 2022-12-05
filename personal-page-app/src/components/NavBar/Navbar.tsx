@@ -1,8 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback, RefObject } from 'react';
 import styles from './styles.module.scss';
 import { Link } from 'react-router-dom';
-const activeMenu = document.querySelector('[data-menu]');
-
 
 const useOutsideListener = (): [
   RefObject<HTMLDivElement>,
