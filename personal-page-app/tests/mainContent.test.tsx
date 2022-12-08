@@ -21,4 +21,12 @@ describe('Testa as funcionalidades da mainContent component', () => {
   test('Testa se o componente MainContent está renderizado', () => {
     expect(mainContent).exist
   })
+
+  test('Testa se o texto do componente está devidamente renderizado', () => {
+    const header = screen.getByRole('heading', {
+      level: 2,
+    });
+
+    expect(header.innerHTML).toBe('Olá! Boas-vindas ao meu portfólio.')
+  });
 })
