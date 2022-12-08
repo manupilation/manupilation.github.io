@@ -32,11 +32,11 @@ describe('Testa as funcionalidades da mainContent component', () => {
 
   test('Testa se o texto do componente h2 está devidamente renderizado', () => {
     const paragraphText = /Chamado pelos amigos e colegas de "Manu", acredito na tecnologia como ponte para igualdade entre todos. Atuo com tecnologias que podem ser verificadas /ig;
-    expect(screen.getByText(paragraphText)).exist
+    expect(screen.getByText(paragraphText)).exist;
   });
 
   test('Testa se a imagem está presente no documento', () => {
     const img = screen.getByAltText(/Foto de Manu/i);
-    expect(img).to.exist
+    expect(img).to.exist;
   });
 })
