@@ -35,6 +35,16 @@ describe('Testa as funcionalidades da mainContent component', () => {
     expect(screen.getByText(paragraphText)).exist;
   });
 
+  test('Testa se existe o botão de Projetos', () => {
+    const btn = screen.getByText(/projetos/i);
+    expect(btn).to.exist;
+  })
+
+  test('Testa se o botão tem o href correto', () => {
+    const btn = screen.getByText(/projetos/i);
+    expect(btn.getAttribute('href')).to.eq('https://github.com/manupilation?tab=repositories');
+  })
+
   test('Testa se a imagem está presente no documento', () => {
     const img = screen.getByAltText(/Foto de Manu/i);
     expect(img).to.exist;
