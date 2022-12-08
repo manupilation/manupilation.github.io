@@ -7,3 +7,18 @@
  import MainContent from '../src/components/Main-content/Main-content';
  import { BrowserRouter } from 'react-router-dom';
 
+
+describe('Testa as funcionalidades da mainContent component', () => {
+  let mainContent;
+  beforeAll(() => {
+    mainContent = render(<MainContent></MainContent>, {
+      wrapper: BrowserRouter,
+    });
+  });
+
+  afterAll(cleanup);
+
+  test('Testa se o componente MainContent está renderizado', () => {
+    expect(mainContent).exist
+  })
+})
