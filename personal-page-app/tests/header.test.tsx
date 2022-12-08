@@ -2,10 +2,14 @@
  * @vitest-environment jsdom
  */
  import React from 'react';
- import { describe, test, expect, beforeAll, afterAll, afterEach } from 'vitest';
- import { cleanup, fireEvent, getByRole, render, screen } from '@testing-library/react';
+ import { describe, test, expect, beforeAll, afterAll } from 'vitest';
+ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
  import Header from '../src/components/Header/Header';
  import { BrowserRouter } from 'react-router-dom';
+
+function responsiveScreen() {
+  document.body.style.width = '600px';
+}
 
 describe('Testa o componente header', () => {
   let renderHeader;
@@ -50,18 +54,30 @@ describe('Testes relacionados as funcionalidades e eventos do Header', () => {
     });
   });
 
-  afterEach(cleanup);
+  afterAll(cleanup);
 
   test('Testa se o click na navegação mobile ativa a lista', () => {
-    document.body.style.width = '600px';
-
+    responsiveScreen();
     const getNavBar = screen.getByRole('navigation');
     const getHeaderNav = screen.getByRole('button', {
       name: /menu/i
     });
     fireEvent.click(getHeaderNav);
-    console.log(getNavBar.classList[1]);
 
     expect(getNavBar.className.includes('_active_')).toBe(true);
+  })
+
+  test('Testa se o segundo click no menu mobile desativa a lista', () => {
+    responsiveScreen();
+
+    const getNavBar = screen.getByRole('navigation');
+    const getHeaderNav = screen.getByRole('button', {
+      name: /menu/i
+    });
+
+    fireEvent.click(getHeaderNav);
+    console.log(getNavBar.className);
+
+    expect(!getNavBar.className.includes('_active_')).toBe(true);
   })
 });
