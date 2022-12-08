@@ -19,14 +19,19 @@ describe('Testa as funcionalidades da mainContent component', () => {
   afterAll(cleanup);
 
   test('Testa se o componente MainContent está renderizado', () => {
-    expect(mainContent).exist
-  })
+    expect(mainContent).exist;
+  });
 
-  test('Testa se o texto do componente está devidamente renderizado', () => {
+  test('Testa se o texto do componente h2 está devidamente renderizado', () => {
     const header = screen.getByRole('heading', {
       level: 2,
     });
 
-    expect(header.innerHTML).toBe('Olá! Boas-vindas ao meu portfólio.')
+    expect(header.innerHTML).toBe('Olá! Boas-vindas ao meu portfólio.');
+  });
+
+  test('Testa se o texto do componente h2 está devidamente renderizado', () => {
+    const paragraphText = /Chamado pelos amigos e colegas de "Manu", acredito na tecnologia como ponte para igualdade entre todos. Atuo com tecnologias que podem ser verificadas /ig;
+    expect(screen.getByText(paragraphText)).exist
   });
 })
