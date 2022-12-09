@@ -8,7 +8,7 @@ function Header() {
       <h1>Emanoel</h1>
       <Navbar/>
     </header>
-  )
-}
+  );
+};
 
 export default Header;
