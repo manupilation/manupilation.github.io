@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Shopping Cart",
+    "details": "Projeto que utiliza Javascript e várias outras tecnologias. Possuindo integração com a API do Mercado Livre, Shopping-cart é capaz de simular um site de compras, buscar por produtos e armazená-los no carrinho.",
+    "isDeployed": true,
+    "deploy": "shopping-cart-ten-roan.vercel.app/",
+    "github": "https://github.com/manupilation/Shopping-Cart",
+    "seeMore": ""
+  },
+  {
+    "title": "SmitheringAPI",
+    "details": "API de ferreiro é uma aplicação para administrar pedidos feitos por clientes. Esta API contém rotas específicas protegidas por validações e verificação de usuário",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/SmitheringAPI",
+    "seeMore": ""
+  }
+]
