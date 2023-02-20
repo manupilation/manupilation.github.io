@@ -1,0 +1,12 @@
+.projectsMain {
+  background-color: var(--c-b1);
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 40px 60px;
+  border-radius: 5px;
+
+  .projectsContainer {
+    display: flex;
+    gap: 20px;
+  }
+}

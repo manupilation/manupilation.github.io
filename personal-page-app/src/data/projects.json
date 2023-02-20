@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Shopping Cart",
+    "details": "Projeto que utiliza Javascript e várias outras tecnologias. Possuindo integração com a API do Mercado Livre, Shopping-cart é capaz de simular um site de compras, buscar por produtos e armazená-los no carrinho.",
+    "isDeployed": true,
+    "deploy": "shopping-cart-ten-roan.vercel.app/",
+    "github": "https://github.com/manupilation/Shopping-Cart",
+    "seeMore": ""
+  },
+  {
+    "title": "Smithering-API",
+    "details": "API de ferreiro é uma aplicação para administrar pedidos feitos por clientes. Esta API contém rotas específicas protegidas por validações e verificação de usuário.",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/SmitheringAPI",
+    "seeMore": ""
+  },
+  {
+    "title": "Task Scheduler back",
+    "details": "Back-end do projeto full-stack Task Scheduler. Aplicativo web para registro e controle de atividades. O back cuida do registro, consulta, edição e exclusão das tasks (CRUD).",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/Kanban-Backend",
+    "seeMore": ""
+  },
+  {
+    "title": "Task Scheduler front",
+    "details": "Front-end do projeto full-stack Task Scheduler. Aplicativo web para registro e controle de atividades. O front é responsável pelo formulário, requisições ao back e operações com as tasks.",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/Kanban-Front",
+    "seeMore": ""
+  },
+  {
+    "title": "Order list",
+    "details": "Projeto em Node.js que, em dois simples passos, cria um relatório ao cruzar os dados (devidamente formatados e verificados) disponíveis em dois diretórios.",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/OrderList",
+    "seeMore": ""
+  }
+]
