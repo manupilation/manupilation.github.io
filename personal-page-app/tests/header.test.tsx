@@ -26,8 +26,8 @@ describe('Testa o componente header', () => {
     expect(renderHeader).exist;
   });
 
-  test('Testa se exibe um titulo H1', () => {
-    const getH1 = screen.getAllByRole('heading', { level: 1, name: /emanoel/i });
+  test('Testa se exibe um titulo Link', () => {
+    const getH1 = screen.getAllByRole('link', { name: /emanoel/i });
 
     expect(getH1).toHaveLength(1);
   });

@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '../NavBar/Navbar';
 import styles from './styles.module.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className={styles.headerContainer}>
-      <h1>Emanoel</h1>
+      <Link to="/">Emanoel</Link>
       <Navbar/>
     </header>
   );
