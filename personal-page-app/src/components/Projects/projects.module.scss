@@ -10,3 +10,27 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 1150px) {
+  .projectsMain {
+    margin: 50px 40px;
+
+    .projectsContainer {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .projectsMain {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+
+    .projectsContainer {
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
+  }
+}
