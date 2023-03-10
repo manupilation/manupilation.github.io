@@ -13,12 +13,16 @@ export type Project = {
 
 function Projects() {
   return(
-    <main className={style.projectsMain}>
-      <div className={style.projectsContainer}>
+    <main className={style.container}>
+      <div className={style.content}>
         {
           ProjectsJson.map((project: Project, i) => {
             return <ProjectCard key={i} project={project}/>
         })}
+      </div>
+      <div className={style.slideButtons}>
+        <button>ANTERIOR</button>
+        <button>PRÓXIMO</button>
       </div>
     </main>
   )
