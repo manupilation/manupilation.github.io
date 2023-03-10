@@ -1,13 +1,17 @@
 .container {
   overflow: hidden;
   flex-wrap: nowrap;
+  
+  .wrapper {
+    background-color: var(--c-b1);
+  }
 
   .content {
-    background-color: var(--c-b1);
     display: flex;
-    justify-content: center;
     border-radius: 5px;
     margin: 0 5rem;
+    box-shadow: 200px 0 var(--c-b3), -200px 0 var(--c-b3);
+    transition: transform 0.3 ease;
   }
 
   .slideButtons {
