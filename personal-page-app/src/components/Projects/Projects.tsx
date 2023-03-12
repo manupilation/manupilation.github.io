@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import ProjectCard from "../ProjectCard/projectCard";
 import ProjectsJson from "../../data/projects.json";
 import style from "./projects.module.scss";
@@ -14,28 +14,46 @@ export type Project = {
 }
 
 function Projects() {
-  const { active, setActive } = useContext(slideContext);
-  const [styleContent, setStyleContent] = useState({
-    transform: "translateX(0)",
-    boxShadow: 0,
-  });
+  const {
+    active,
+    setActive,
+    position,
+    setPosition,
+  } = useContext(slideContext);
+
+  const contentRef = useRef<HTMLDivElement>(null!);
+
+  useEffect(() => {
+    const { width } = contentRef.current.getBoundingClientRect();
+    setPosition(-(width * active));
+  }, [active])
+
+
+  function slideNext() {
+    if (active < ProjectsJson.length - 1) setActive(active + 1);
+  }
+
+  function slidePrev() {
+    if (active > 0) setActive(active - 1);
+  }
 
   return(
     <main className={style.container}>
-        <div
-          className={style.content}
-          style={{transform: "translateX(0)"}}
-        >
-          {
-            ProjectsJson.map((project: Project, i) => {
-              return <ProjectCard key={i} project={project}/>
-          })}
-        </div>
-
+      <div
+        className={style.content}
+        style={{
+          transform: `translateX(${position}px)`,
+        }}
+        ref={contentRef}
+      >
+        {
+          ProjectsJson.map((project: Project, i) => {
+            return <ProjectCard key={i} project={project}/>
+        })}
       </div>
       <div className={style.slideButtons}>
-        <button>ANTERIOR</button>
-        <button>PRÓXIMO</button>
+        <button onClick={slidePrev} disabled={active === 0}>ANTERIOR</button>
+        <button onClick={slideNext} disabled={active === ProjectsJson.length -1 }>PRÓXIMO</button>
       </div>
     </main>
   )
