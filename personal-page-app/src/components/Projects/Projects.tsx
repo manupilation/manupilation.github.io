@@ -10,6 +10,7 @@ export type Project = {
   isDeployed: boolean,
   github: string,
   seeMore: string,
+  deploy: string,
 }
 
 function Projects() {
