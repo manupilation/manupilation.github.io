@@ -1,10 +1,6 @@
 .container {
   overflow: hidden;
   flex-wrap: nowrap;
-  
-  .wrapper {
-    background-color: var(--c-b1);
-  }
 
   .content {
     display: flex;
