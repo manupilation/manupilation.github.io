@@ -21,7 +21,6 @@ function Projects() {
 
   return(
     <main className={style.container}>
-      <div className={style.wrapper}>
         <div
           className={style.content}
           style={{transform: "translateX(0)"}}
