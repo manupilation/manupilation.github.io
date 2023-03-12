@@ -3,7 +3,7 @@
     "title": "Shopping Cart",
     "details": "Projeto que utiliza Javascript e várias outras tecnologias. Possuindo integração com a API do Mercado Livre, Shopping-cart é capaz de simular um site de compras, buscar por produtos e armazená-los no carrinho.",
     "isDeployed": true,
-    "deploy": "shopping-cart-ten-roan.vercel.app/",
+    "deploy": "https://shopping-cart-ten-roan.vercel.app/",
     "github": "https://github.com/manupilation/Shopping-Cart",
     "seeMore": ""
   },
