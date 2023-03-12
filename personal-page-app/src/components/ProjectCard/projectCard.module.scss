@@ -1,13 +1,44 @@
 .cardSection {
-  width: 30%;
+  width: 70%;
   flex-shrink: 0;
-  background-color: var(--c-y);
-  margin: 1rem 35%;
+  margin: 1rem 15%;
   border-radius: 5px;
+  background-color: var(--c-b1);
 
   .cardContainer {
+    position: relative;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
+    background-color: var(--c-y);
+    border-radius: 5px;
+    width: 40%;
+    margin: 1rem auto;
+
+    span {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      .deployed {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: green;
+        border-radius: 50%;
+        border: 1px solid var(--c-b1);
+      }
+
+      .notDeployed {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        border-radius: 50%;
+        border: 1px solid var(--c-b1);
+      }
+    }
 
     h2 {
       padding: 20px 0 0 0;
@@ -21,7 +52,7 @@
     p {
       font-size: .9rem;
       max-width: 35ch;
-      padding: 0 16px;
+      padding: 0 1rem;
       font-family: "Poppins";
       color: var(--c-2);
       min-height: 150px;
