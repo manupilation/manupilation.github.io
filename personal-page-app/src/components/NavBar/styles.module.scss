@@ -51,6 +51,10 @@
     margin-top: 10px;
     position: absolute;
   }
+
+  a[aria-current="page"]::after {
+    width: 100%;
+  }
 }
 
 .menu {
@@ -132,6 +136,10 @@
     }
 
     a::after {
+      width: 0%;
+    }
+
+    a[aria-current="page"]::after {
       width: 0%;
     }
   }
