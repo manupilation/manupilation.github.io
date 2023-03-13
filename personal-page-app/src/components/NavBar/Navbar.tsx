@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback, RefObject } from 'react';
 import styles from './styles.module.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const useOutsideListener = (): [
   RefObject<HTMLDivElement>,
@@ -44,10 +44,10 @@ function renderNavBar() {
       <button className={styles.menu} onClick={ handleClick } data-menu>MENU</button>
       <nav className={styles.navContainer} data-menu>
         <ul className={styles.navList}>
-          <Link to="/exp">Experiência</Link>
-          <Link to="/formacao">Formação</Link>
-          <Link to="/projects">Projetos</Link>
-          <Link to="/contact">Contato</Link>
+          <NavLink to="exp">Experiência</NavLink>
+          <NavLink to="formacao">Formação</NavLink>
+          <NavLink to="projects">Projetos</NavLink>
+          <NavLink to="contact">Contato</NavLink>
         </ul>
       </nav>
     </div>
