@@ -44,10 +44,10 @@ function renderNavBar() {
       <button className={styles.menu} onClick={ handleClick } data-menu>MENU</button>
       <nav className={styles.navContainer} data-menu>
         <ul className={styles.navList}>
-          <NavLink to="exp">Experiência</NavLink>
-          <NavLink to="formacao">Formação</NavLink>
-          <NavLink to="projects">Projetos</NavLink>
-          <NavLink to="contact">Contato</NavLink>
+          <NavLink to="/exp">Experiência</NavLink>
+          <NavLink to="/formacao">Formação</NavLink>
+          <NavLink to="/projects">Projetos</NavLink>
+          <NavLink to="/contact">Contato</NavLink>
         </ul>
       </nav>
     </div>
