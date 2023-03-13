@@ -1,7 +1,7 @@
 .cardSection {
-  width: 70%;
   flex-shrink: 0;
-  margin: 1rem 15%;
+  width: 70%;
+  margin: 0 15%;
   border-radius: 5px;
   background-color: var(--c-b1);
 
@@ -85,3 +85,63 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .cardSection {
+    width: 80%;
+    margin: 0 10%;
+
+    .cardContainer {
+      width: 60%;
+
+      p {
+        max-width: 46ch;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cardSection {
+    .cardContainer {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        max-width: 37ch;
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cardSection {
+    width: 90%;
+    margin: 1.5rem 5% 0 5%;
+    .cardContainer {
+      p {
+        max-width: 32ch;
+        font-size: .750rem;
+        padding: .7rem 10px;
+      }
+      .containerLinks {
+        padding: 0 15% .7rem 15%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .cardSection {
+    .cardContainer {
+      p {
+        max-width: 22ch;
+        font-size: .650rem;
+
+      }
+  }
+}
+}
+
