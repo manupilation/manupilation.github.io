@@ -4,15 +4,16 @@
 
   .content {
     display: flex;
+    margin-top: 20px;
     border-radius: 5px;
-    margin: 1rem repeat(2, 5rem) 0;
     transition: transform 0.3s ease;
   }
 
   .slideButtons {
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem;
+    margin: 0 15%;
+    margin-bottom: 20px;
 
     button {
       margin-top: 10px;
@@ -30,6 +31,24 @@
         cursor: default;
         opacity: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    .slideButtons {
+      width: 80%;
+      margin: 0 10% 20px 10%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    .slideButtons {
+        width: 90%;
+        margin: 0 5% 1rem 5%;
     }
   }
 }
