@@ -28,3 +28,9 @@ button {
   justify-content: space-between;
   min-height: 100vh;
 }
+
+.animaRight {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: animeRight .4s forwards;
+}
