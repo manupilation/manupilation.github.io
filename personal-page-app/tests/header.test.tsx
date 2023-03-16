@@ -64,7 +64,7 @@ describe('Testes relacionados as funcionalidades e eventos do Header', () => {
     });
     fireEvent.click(getHeaderNav);
 
-    expect(getNavBar.className.includes('_active_')).toBe(true);
+    expect(getNavBar.className.includes('active')).toBe(true);
   })
 
   test('Testa se o segundo click no menu mobile desativa a lista', () => {
@@ -78,6 +78,6 @@ describe('Testes relacionados as funcionalidades e eventos do Header', () => {
     fireEvent.click(getHeaderNav);
     console.log(getNavBar.className);
 
-    expect(!getNavBar.className.includes('_active_')).toBe(true);
+    expect(!getNavBar.className.includes('active')).toBe(true);
   })
 });

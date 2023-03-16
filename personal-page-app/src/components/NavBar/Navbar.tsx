@@ -1,48 +1,40 @@
-import React, { useRef, useEffect, useState, useCallback, RefObject } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import { NavLink } from 'react-router-dom';
 
-const useOutsideListener = (): [
-  RefObject<HTMLDivElement>,
-  (node: HTMLDivElement) => void
-] => {
-  const ref = useRef<HTMLDivElement | null>(null);
-
-  const setRef = useCallback((node: HTMLDivElement) => {
-    ref.current = node;
-  }, [ref.current]);
-
-  return [ref, setRef]
-}
-
 function renderNavBar() {
-  const [isActive, setIsActive] = useState(false)
-  const [ref, setRef] = useOutsideListener();
+  const [isActive, setIsActive] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null!)
 
   function handleClick(event: React.MouseEvent<HTMLElement>) {
-    event.currentTarget.nextElementSibling?.classList.toggle(styles['active']);
-    setIsActive(!isActive)
+    setIsActive(!isActive);
   }
 
   useEffect(() => {
-    if(ref.current?.attributes[1].value === 'true') {
+    function clickOutside(event: MouseEvent) {
+      const menu = event.target as Node;
       
-      document.body.addEventListener('touchstart', function handleOutside(event) {
-        setTimeout(() => {
-          const menuButton = (event.target as HTMLElement).parentElement;
-          if(menuButton !== ref.current) {
-            ref.current?.querySelector('nav')?.classList.remove(styles['active']);
-            document.body.removeEventListener('touchstart', handleOutside);
-        }}, 75);
-      });
-    };
-    
-  }, [ref.current?.attributes[1].value]);
+      if(!menuRef.current.contains(menu)) {
+        setIsActive(false)
+      }
+    }
+
+    document.addEventListener('mousedown', clickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', clickOutside);
+    }
+  });
 
   return (
-    <div className={styles.navBar} ref={ref} data-isactive={ isActive.toString() }>
-      <button className={styles.menu} onClick={ handleClick } data-menu>MENU</button>
-      <nav className={styles.navContainer} data-menu>
+    <div className={styles.navBar} ref={menuRef}>
+      <button 
+        className={`${styles.menu} ${isActive ? "active" : ""}`}
+        onClick={ handleClick }
+      >
+        MENU
+      </button>
+      <nav className={`${styles.navContainer} ${isActive ? "active" : ""}`}>
         <ul className={styles.navList}>
           <NavLink to="/exp">Experiência</NavLink>
           <NavLink to="/formacao">Formação</NavLink>
