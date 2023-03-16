@@ -4,7 +4,7 @@ import eu from '../../../images/Eur.jpg';
 
 function PresentationSection() {
   return (
-    <section className={styles.presentationSection}>
+    <section className={styles.presentationSection  + " animaRight"}>
       <article>
         <h2>Olá! Boas-vindas ao meu portfólio.</h2>
         <p>Chamado pelos amigos e colegas de "Manu", acredito na tecnologia como ponte para igualdade entre todos. Atuo com tecnologias que podem ser verificadas <a href="https://github.com/manupilation" target="_blank"

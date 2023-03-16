@@ -5,7 +5,7 @@ import construction from '../../../images/construction.jpg';
 
 function NoBuildBody() {
   return (
-    <main className={styles.noBuildContainer}>
+    <main className={styles.noBuildContainer  + " animaRight"}>
       <section>
         <h3>Ops! Parece que essa página ainda não existe 😔.</h3>
         <p className={styles.paragraph}>Mas calma, acho que o Manu irá fazê-la em breve! 🥺</p>
