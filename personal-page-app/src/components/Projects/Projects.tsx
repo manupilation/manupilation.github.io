@@ -38,7 +38,7 @@ function Projects() {
   }
 
   return(
-    <main className={style.container}>
+    <main className={style.container + " animaRight"}>
       <div
         className={style.content}
         style={{
