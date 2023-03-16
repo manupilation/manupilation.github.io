@@ -34,7 +34,7 @@ function renderNavBar() {
       >
         MENU
       </button>
-      <nav className={`${styles.navContainer} ${isActive ? "active" : ""}`}>
+      <nav className={`${styles.navContainer} ${isActive ? "active" : ""}  animaDown`}>
         <ul className={styles.navList}>
           <NavLink to="/exp">Experiência</NavLink>
           <NavLink to="/formacao">Formação</NavLink>
