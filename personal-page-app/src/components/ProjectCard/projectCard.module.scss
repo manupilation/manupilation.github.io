@@ -21,20 +21,25 @@
       right: 10px;
       top: 10px;
 
+      &:focus {
+        outline: none;
+        outline-style: none;
+      }
+
       .deployed {
         display: block;
-        width: 12px;
-        height: 12px;
-        background-color: green;
+        width: 1rem;
+        height: 1rem;
+        background-color: #3D3;
         border-radius: 50%;
         border: 1px solid var(--c-b1);
       }
 
       .notDeployed {
         display: block;
-        width: 12px;
-        height: 12px;
-        background-color: red;
+        width: 1rem;
+        height: 1rem;
+        background-color: #F33;
         border-radius: 50%;
         border: 1px solid var(--c-b1);
       }
