@@ -12,7 +12,6 @@ type HeadProps = {
 
 export const Head = (props: HeadProps) => {
   useEffect(() => {
-    console.log("Estive aqui!");
     document.title = "Manu | " + props.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", props.description);
   }, [props]);
