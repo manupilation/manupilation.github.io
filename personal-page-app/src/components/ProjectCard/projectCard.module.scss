@@ -33,6 +33,7 @@
         background-color: #3D3;
         border-radius: 50%;
         border: 1px solid var(--c-b1);
+        animation: pulsing 2s infinite;
       }
 
       .notDeployed {
@@ -146,7 +147,19 @@
         font-size: .650rem;
 
       }
+    }
   }
 }
+
+@keyframes pulsing {
+  0% {
+    background-color: #3D3;
+  }
+  50% {
+    background-color: #151;
+  }
+  100% {
+    background-color: #3D3;
+  }
 }
 
