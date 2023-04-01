@@ -1,0 +1,50 @@
+.contactContainer {
+  background-color: var(--c-b1);
+  margin: 0 15%;
+  padding: 2rem 2rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  .presentationContainer {
+    display: flex;
+    flex-direction: column;
+
+    .imageContainer {
+      max-width: 18rem;
+      max-height: 15rem;
+      overflow: hidden;
+      border-radius: 5px;
+      background-size: cover;
+      margin-bottom: 1rem;
+    }
+
+    .downloadCV {
+      display: flex;
+      cursor: pointer;
+      padding: .4rem .6rem;
+      background: var(--c-y);
+      border-radius: 5px;
+      align-self: flex-end;
+      align-items: center;
+      gap: .2rem;
+
+      p {
+        font-family: "Poppins";
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 20px;
+          background-color: var(--c-b2);
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
