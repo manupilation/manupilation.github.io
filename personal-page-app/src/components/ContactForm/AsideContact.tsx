@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './ContactForm.module.scss';
 import { ReactComponent as Copy} from '../../../images/copy.svg';
 import insta from '../../../images/instagram.svg';
@@ -6,6 +6,17 @@ import linkedin from '../../../images/linkedin.svg';
 import github from '../../../images/github.svg';
 
 const AsideContact = () => {
+  const [copied, setCopied] = useState(false);
+
+  function handleCopied() {
+    setCopied(true);
+    navigator.clipboard.writeText("manupilation.dev@gmail.com");
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
+
   return (
     <aside className={styles.asideContainer}>
       <div>
@@ -16,7 +27,11 @@ const AsideContact = () => {
             type="text"
             readOnly={true}
           />
-          <Copy className={styles.copy}/>
+          {copied && <p className={styles.copied}>Copiado</p>}
+          <Copy
+            className={styles.copy}
+            onClick={handleCopied}
+          />
         </label>
       </div>
     
