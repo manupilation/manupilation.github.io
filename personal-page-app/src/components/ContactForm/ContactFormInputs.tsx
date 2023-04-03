@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from './ContactForm.module.scss';
 import ContactInput from './ContactInput';
 import { ReactComponent as Setinha} from '../../../images/download.svg';
-import AsideContact from './AsideContact';
 
 const ContactFormInputs = () => {
   const [name, setName] = useState<string>("");
@@ -11,7 +10,6 @@ const ContactFormInputs = () => {
 
   return (
     <article className={styles.formContainer}>
-      <h3>Entre em contato:</h3>
       <form>
         <ContactInput
           type='text'
@@ -30,20 +28,19 @@ const ContactFormInputs = () => {
         <label className={styles.formInput}>
           Mensagem:
           <textarea
-            placeholder='Escreva aqui sua mensagem...'
+            placeholder='Sua mensagem...'
             value={message}
             onChange={({target}) => setMessage(target.value)}
-            rows={3}
+            rows={1}
           />
         </label>
 
-        <a>
-          <Setinha />
+        <a className={styles.sendButton}>
           ENVIAR
+          <Setinha />
         </a>
       </form>
 
-      <AsideContact />
   </article>
   );
 };
