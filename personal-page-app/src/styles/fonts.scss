@@ -1,0 +1,31 @@
+:root {
+  --f-g-pop: 2rem "Poppins";
+  --f-g-mon: 2rem "Montserrat";
+  --f-m-pop: 1rem "Poppins";
+  --f-m-mon: 1rem "Montserrat";
+  --f-ms-pop: 0.75rem "Poppins";
+  --f-ms-mon: 0.750rem "Montserrat";
+}
+
+@media (max-width: 800px) {
+  :root {
+    --f-g-pop: 1.75rem "Poppins";
+    --f-g-mon: 1.75rem "Montserrat";
+    --f-m-pop: .875rem "Poppins";
+    --f-m-mon: .875rem "Montserrat";
+    --f-ms-pop: 0.625rem "Poppins";
+    --f-ms-mon: 0.625rem "Montserrat";
+  }
+}
+
+
+@media (max-width: 600px) {
+  :root {
+    --f-g-pop: 1.5rem "Poppins";
+    --f-g-mon: 1.5rem "Montserrat";
+    --f-m-pop: 0.75rem "Poppins";
+    --f-m-mon: 0.75rem "Montserrat";
+    --f-ms-pop: 0.5rem "Poppins";
+    --f-ms-mon: 0.5rem "Montserrat";
+  }
+}
