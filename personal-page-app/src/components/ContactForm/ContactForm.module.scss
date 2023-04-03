@@ -94,6 +94,12 @@
           transform: rotate(270deg);
         }
       }
+
+      .offSendButton {
+        background-color: var(--c-b2);
+        color: var(--c-yw);
+        pointer-events: none;
+      }
     }
 
     .asideContainer {
@@ -121,8 +127,33 @@
     margin: .2rem 0 .5rem 0;
     color: #FFF;
 
+    &:read-only {
+      cursor: default;
+    }
+
     &:focus {
       outline: none;
+    }
+  }
+
+  .copied {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: var(--c-2);
+    padding: .2rem .4rem;
+    border-radius: 5px;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid var(--c-2);
+      position: absolute;
+      bottom: -8px;
+      right: 0px;
     }
   }
 
