@@ -12,7 +12,7 @@ const ContactForm = () => {
         <div className={styles.imageContainer}>
           <img src={ManuImage} alt="Imagem do Manu. Atrás dele, uma cerca viva."/>
         </div>
-        <a className={styles.downloadCV}>
+        <a className={styles.downloadCV} href='/CurriculoManu.pdf' download="CV-Manu.pdf">
           <Download />
           <p>CV</p>
         </a>
