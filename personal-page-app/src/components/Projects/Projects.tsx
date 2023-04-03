@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard/projectCard";
 import ProjectsJson from "../../data/projects.json";
 import style from "./projects.module.scss";
 import { slideContext } from "../../context/slideContext";
+import NavProjects from "../NavProjects/NavProjects";
 
 export type Project = {
   title: string,
@@ -52,8 +53,11 @@ function Projects() {
         })}
       </div>
       <div className={style.slideButtons}>
-        <button onClick={slidePrev} disabled={active === 0}>ANTERIOR</button>
-        <button onClick={slideNext} disabled={active === ProjectsJson.length -1 }>PRÓXIMO</button>
+        <button onClick={slidePrev} disabled={active === 0}>⇦</button>
+        {ProjectsJson.map((project, i) => {
+          return <NavProjects index={i} setActive={setActive} active={active} key={i}/>
+        })}
+        <button onClick={slideNext} disabled={active === ProjectsJson.length -1 }>⇨</button>
       </div>
     </main>
   )

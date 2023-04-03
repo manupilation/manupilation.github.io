@@ -9,12 +9,13 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -22,11 +23,19 @@ button {
   cursor: pointer;
 }
 
+ul, li, ol {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 101vh;
 }
 
 .animaRight {

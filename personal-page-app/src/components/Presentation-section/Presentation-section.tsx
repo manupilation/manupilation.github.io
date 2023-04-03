@@ -13,6 +13,7 @@ function PresentationSection() {
         target="_blank"
         rel="external">Projetos</a>
       </article>
+      <span className={styles.separator}></span>
       <div className={styles.selfImage}>
         <img src={eu} alt="Foto de Manu"/> 
       </div>

@@ -1,22 +1,25 @@
-import React from "react";
+import React, { FocusEvent } from "react";
 import { Project } from "../Projects/Projects";
 import githubIcon from "../../../images/githubButton.svg";
 import style from "./projectCard.module.scss";
 
-
-function ProjectCard(props: { project: Project }) {
+  function ProjectCard(props: { project: Project }) {
   const { project } = props;
 
+
   return(
-    <section className={style.cardSection}>
+    <section className={style.cardSection} aria-label="Card de projeto">
       <div className={style.cardContainer}>
-        <span> 
+        <span
+          tabIndex={-1}
+        > 
           {
             project.isDeployed
             ? <a
               className={style.deployed} 
               target="_blank" 
               href={project.deploy}
+              tabIndex={-1}
               ></a>
             : <div className={style.notDeployed}></div>
           }
@@ -25,8 +28,12 @@ function ProjectCard(props: { project: Project }) {
         <p>{project.details}</p>
 
         <div className={style.containerLinks}>
-          <div>
-            <a href={project.github} target="_blank"><img src={ githubIcon } alt="Github icon"/></a>
+          <div tabIndex={-1}>
+            <a
+              href={project.github}
+              target="_blank"
+              tabIndex={-1}
+            ><img src={ githubIcon } alt="Github icon"/></a>
           </div>
           <h4>STACK</h4>
         </div>

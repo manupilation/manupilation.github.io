@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ProjectsPage from "../pages/Projects";
 import NoBuild from "../pages/NoBuild";
+import Contact from "../pages/Contact";
 
 function DefaultRoutes() {
   return (
@@ -13,6 +14,7 @@ function DefaultRoutes() {
       <Routes>
         <Route path="/" element={ <HomePage /> }/>
         <Route path="/projects" element={ <ProjectsPage /> }/>
+        <Route path="contact" element={<Contact />} />
         <Route path="*" element={ <NoBuild /> }/>
       </Routes>
       <Footer />

@@ -12,14 +12,14 @@
   .slideButtons {
     display: flex;
     justify-content: space-between;
-    margin: 0 15%;
-    margin-bottom: 20px;
+    margin: .5rem 15% 20px 15%;
+    align-items: center;
 
     button {
-      margin-top: 10px;
+      font-size: 2rem;
       color: var(--c-1);
       background-color: var(--c-y);
-      padding: .8rem .4rem;
+      padding: .1rem .4rem;
       font-weight: 600;
       border-radius: 5px;
       &:hover {
@@ -39,7 +39,7 @@
   .container {
     .slideButtons {
       width: 80%;
-      margin: 0 10% 20px 10%;
+      margin: .5rem 10% 20px 10%;
     }
   }
 }
@@ -48,7 +48,7 @@
   .container {
     .slideButtons {
         width: 90%;
-        margin: 0 5% 1rem 5%;
+        margin: .3rem 5% 1rem 5%;
     }
   }
 }

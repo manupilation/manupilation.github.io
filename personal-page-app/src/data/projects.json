@@ -1,5 +1,13 @@
 [
   {
+    "title": "Little Paws",
+    "details": "Little Paws é uma rede social para animais. Nela, você pode postar fotos, interagir com outros pets e analisar seu engajamento.",
+    "isDeployed": true,
+    "deploy": "https://little-paws-one.vercel.app/",
+    "github": "https://github.com/manupilation/Little-Paws",
+    "seeMore": ""
+  },
+  {
     "title": "Shopping Cart",
     "details": "Projeto que utiliza Javascript e várias outras tecnologias. Possuindo integração com a API do Mercado Livre, Shopping-cart é capaz de simular um site de compras, buscar por produtos e armazená-los no carrinho.",
     "isDeployed": true,
