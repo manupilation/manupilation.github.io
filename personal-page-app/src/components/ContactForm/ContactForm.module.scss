@@ -194,4 +194,57 @@
       }
     }
   }
+
+  .formInput {
+
+    input, textarea {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contactContainer {
+    padding: 2rem 1.5rem;
+
+    .contactInputAside {
+      .asideContainer {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .contactContainer {
+    .contactInputAside {
+      display: flex;
+      flex-direction: column;
+
+      .separator {
+        width: 90%;
+        height: 2px;
+        margin: 1.5rem auto;
+      }
+
+      .formContainer {
+        .sendButton {
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .contactInputAside {
+      .asideContainer {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .formInput {
+
+    input, textarea {
+      width: 90%;
+    }
+  }
 }
