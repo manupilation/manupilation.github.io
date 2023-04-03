@@ -5,6 +5,7 @@
   border-radius: 5px;
   display: grid;
   grid-template-columns: auto 1fr;
+  gap: 2rem;
 
   .presentationContainer {
     display: flex;
@@ -44,6 +45,132 @@
           background-color: var(--c-b2);
           margin-right: 4px;
         }
+      }
+    }
+  }
+
+  .contactInputAside {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    h3 {
+      font: 600 2rem "Poppins";
+      color: var(--c-yw);
+      grid-column: 1 / -1;
+      height: 50px;
+    }
+
+    .separator {
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: var(--c-y);
+    }
+
+    .formContainer {
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sendButton {
+        cursor: pointer;
+        font: 500 1rem "Poppins";
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--c-y);
+        padding: .6rem .6rem;
+        border-radius: 5px;
+        align-self: flex-end;
+        margin-right: 20%;
+        margin-top: 1rem;
+
+        svg {
+          transform: rotate(270deg);
+        }
+      }
+    }
+
+    .asideContainer {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.formInput {
+  display: block;
+  color: var(--c-yw);
+  font: 600 1rem "Montserrat";
+  position: relative;
+  box-sizing: border-box;
+
+  input, textarea {
+    display: block;
+    padding: .4rem .8rem;
+    font-size: 1rem;
+    width: 80%;
+    background-color: var(--c-b1);
+    border: none;
+    border-bottom: solid 2px var(--c-0);
+    margin: .2rem 0 .5rem 0;
+    color: #FFF;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .copy {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+  }
+}
+
+.manuData {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-top: 2rem;
+    color: var(--c-yw);
+    font: 500 .8rem "Poppins";
+
+    li {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      &::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        display: inline-block;
+        background-color: var(--c-y);
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.manuSocials {
+  margin-top: 2rem;
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      img {
+        height: 30px;
+        width: 30px;
       }
     }
   }
