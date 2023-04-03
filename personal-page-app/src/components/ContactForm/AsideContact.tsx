@@ -7,7 +7,7 @@ import github from '../../../images/github.svg';
 
 const AsideContact = () => {
   return (
-    <aside>
+    <aside className={styles.asideContainer}>
       <div>
         <label className={styles.formInput}>
           Contato:
@@ -16,7 +16,7 @@ const AsideContact = () => {
             type="text"
             readOnly={true}
           />
-          <a><Copy /></a>
+          <Copy className={styles.copy}/>
         </label>
       </div>
     
@@ -27,34 +27,33 @@ const AsideContact = () => {
           <li>Pernambuco, Brasil</li>
         </ul>
       </div>
-    
-      <div>
-        <nav aria-label="redes-sociais">
-          <ul>
-            <a
-              href="https://github.com/manupilation"
-              target="_blank"
-              rel="external">
-              <img src={github}
-              alt="github icon"/>
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/emanoel-mattos-ribeiro/"
-              target="_blank"
-              rel="external">
-              <img src={linkedin} alt="linkedin icon"/>
-            </a>
-            <a
-              href="https://www.instagram.com/manou.exe/"
-              target="_blank"
-              rel="external">
-              <img src={insta} alt="instagram icon" />
-            </a>
-          </ul>
-        </nav>
-      </div>
+
+      <nav aria-label="redes-sociais" className={styles.manuSocials}>
+        <ul>
+          <a
+            href="https://github.com/manupilation"
+            target="_blank"
+            rel="external">
+            <img src={github}
+            alt="github icon"/>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/emanoel-mattos-ribeiro/"
+            target="_blank"
+            rel="external">
+            <img src={linkedin} alt="linkedin icon"/>
+          </a>
+          <a
+            href="https://www.instagram.com/manou.exe/"
+            target="_blank"
+            rel="external">
+            <img src={insta} alt="instagram icon" />
+          </a>
+        </ul>
+      </nav>
+
     </aside>
     )
   }
   
-  export default AsideContact
+  export default AsideContact;
