@@ -4,6 +4,7 @@ import ProjectsJson from "../../data/projects.json";
 import style from "./projects.module.scss";
 import { slideContext } from "../../context/slideContext";
 import NavProjects from "../NavProjects/NavProjects";
+import { ReactComponent as Setinha } from '../../../images/download.svg';
 
 export type Project = {
   title: string,
@@ -53,11 +54,11 @@ function Projects() {
         })}
       </div>
       <div className={style.slideButtons}>
-        <button onClick={slidePrev} disabled={active === 0}>⇦</button>
+        <button onClick={slidePrev} disabled={active === 0}><Setinha /></button>
         {ProjectsJson.map((project, i) => {
           return <NavProjects index={i} setActive={setActive} active={active} key={i}/>
         })}
-        <button onClick={slideNext} disabled={active === ProjectsJson.length -1 }>⇨</button>
+        <button onClick={slideNext} disabled={active === ProjectsJson.length -1 }><Setinha /></button>
       </div>
     </main>
   )
