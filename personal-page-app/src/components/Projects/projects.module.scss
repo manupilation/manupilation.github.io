@@ -15,13 +15,25 @@
     margin: .5rem 15% 20px 15%;
     align-items: center;
 
+    button:first-of-type {
+      transform: rotate(90deg);
+    }
+
+    button:last-of-type {
+      transform: rotate(270deg);
+    }
+
     button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2rem;
       color: var(--c-1);
       background-color: var(--c-y);
-      padding: .1rem .4rem;
-      font-weight: 600;
+      padding: .5rem .5rem;
       border-radius: 5px;
+      box-sizing: border-box;
+
       &:hover {
         background-color: var(--c-yo);
         color: var(--c-2);
@@ -30,6 +42,11 @@
       &:disabled {
         cursor: default;
         opacity: 0;
+      }
+
+      svg {
+        width: 22px;
+        height: 22px;
       }
     }
   }
