@@ -7,7 +7,7 @@ import AsideContact from './AsideContact';
 
 const ContactForm = () => {
   return (
-    <section className={styles.contactContainer}>
+    <section className={styles.contactContainer  + " animaRight"}>
       <article className={styles.presentationContainer}>
         <div className={styles.imageContainer}>
           <img src={ManuImage} alt="Imagem do Manu. Atrás dele, uma cerca viva."/>
