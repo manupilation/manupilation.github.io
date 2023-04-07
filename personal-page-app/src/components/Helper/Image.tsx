@@ -1,0 +1,27 @@
+import React, { SyntheticEvent, useState } from 'react';
+import styles from './Image.module.scss';
+
+type ImageProps = {
+  src: string,
+  alt: string,
+};
+
+const Image = (props: ImageProps) => {
+  const { src, alt } = props;
+  const [skeleton, setSkeleton] = useState(true);
+
+  function handleOnLoad(event: SyntheticEvent<HTMLImageElement>) {
+    const { currentTarget } = event;
+    setSkeleton(false);
+    currentTarget.style.opacity = "1";
+  }
+
+  return (
+    <div className={styles.wrapper}>
+      {skeleton && <div className={styles.skeleton}></div>}
+      <img onLoad={handleOnLoad} className={styles.img} alt={alt} src={src}/>
+    </div>
+  );
+};
+
+export default Image;
