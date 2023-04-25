@@ -11,7 +11,7 @@ const ContactForm = () => {
     <section className={styles.contactContainer  + " animaRight"}>
       <article className={styles.presentationContainer}>
         <Image src={ManuImage} alt="Imagem do Manu. Atrás dele, uma cerca viva." className={styles.imageContainer} />
-        <a className={styles.downloadCV} href='/CurriculoManu.pdf' download="CV-Manu.pdf">
+        <a className={styles.downloadCV} href='/CurriculoManu.pdf' download>
           <Download />
           <p>CV</p>
         </a>
