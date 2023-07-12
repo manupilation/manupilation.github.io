@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /CurriculoManu.pdf
+Disallow: /images/
+Disallow: /dist
