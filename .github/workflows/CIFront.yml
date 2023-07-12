@@ -11,13 +11,14 @@ jobs:
           - 16
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node }}
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: ${{ matrix.node-version }}
           cache: "npm"
-
-      - name: Install Dependencies
-        run: cd personal-page-app && npm install
-      - name: Running tests
-      - run: cd personal-page-app && npm test
+    
+      - name: Install dependencies
+        run:  cd personal-page-app && npm install
+      - name: Run tests
+        run: cd personal-page-app && npm run test
+        
