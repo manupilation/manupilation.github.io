@@ -4,7 +4,7 @@
 import React from 'react';
 import { describe, test, expect, beforeAll } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Footer from '../src/components/Footer/Footer';
+import Footer from '../../src/components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('Testa o componente footer e suas funcionalidades', () => {
