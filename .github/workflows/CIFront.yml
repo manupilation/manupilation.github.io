@@ -1,0 +1,23 @@
+name: "Personal Page CI"
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: 'Node.js v${{ matrix.node }}'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 16
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: cd personal-page-app && npm install
+      - name: Running tests
+      - run: cd personal-page-app && npm test
