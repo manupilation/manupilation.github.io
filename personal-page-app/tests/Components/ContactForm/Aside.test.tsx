@@ -21,7 +21,7 @@ describe('Testa o projectCard', () => {
     expect(aside).to.exist;
   });
 
-  test("Texta se o textBox contato exibe o email", () => {
+  test("Testa se o textBox contato exibe o email", () => {
     const inputEmail = screen.getByRole('textbox', {
       name: /contato:/i,
     });
@@ -31,7 +31,7 @@ describe('Testa o projectCard', () => {
   });
 
 
-  test("Texta se a lista de infos está presente", () => {
+  test("Testa se a lista de infos está presente", () => {
     const nomeElement = screen.getByText(/emanoel/i);
     const idadeElement = screen.getByText(/anos/i);
     const localElement = screen.getByText(/Pernambuco, Brasil/i);

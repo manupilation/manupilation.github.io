@@ -27,7 +27,7 @@ describe('Testa o projectCard', () => {
     expect(title.innerHTML).to.match(/contato/ig);
   });
 
-  test("Texta se o input de nome é renderizado", () => {
+  test("Testa se o input de nome é renderizado", () => {
     const inputNome = screen.getByRole('textbox', {
       name: /nome:/i,
     });
@@ -37,7 +37,7 @@ describe('Testa o projectCard', () => {
   });
 
 
-  test("Texta se o input de email é renderizado", () => {
+  test("Testa se o input de email é renderizado", () => {
     const inputEmail = screen.getByRole('textbox', {
       name: /email:/i,
     });
@@ -46,7 +46,7 @@ describe('Testa o projectCard', () => {
     expect(inputEmail.getAttribute("id")).toBe("email");
   });
 
-  test("Texta se o input de email é renderizado", () => {
+  test("Testa se o input de email é renderizado", () => {
     const inputMessage = screen.getByRole('textbox', {
       name: /mensagem:/i,
     });
