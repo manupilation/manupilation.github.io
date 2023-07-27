@@ -1,11 +1,12 @@
 import React from 'react';
 import Image from '../../Helper/Image';
 import Separator from '../../Helper/Separator';
+import Alfredo from '../../../../images/Alfredo.jpg';
 
 const AlfredoContent = () => {
   return (
     <main>
-      <Image src='' alt=''/>
+      <Image src={Alfredo} alt='Alfredo prestes a atacar as mãos de um humano.'/>
 
       <Separator />
 
