@@ -3,6 +3,7 @@ import Image from '../../Helper/Image';
 import styles from './SecondBody.module.scss';
 import AbordagemSection from './AbordagemSection/AbordagemSection';
 import ExpSection from './ExpSection/ExpSection';
+import PeopleJob from '../../../../images/PeopleJob.png';
 
 const SecondBody = () => {
   return (
@@ -10,7 +11,7 @@ const SecondBody = () => {
       <div>
         <AbordagemSection />
 
-        <Image src='' alt='Pessoas felizes trabalhando' className={styles.peopleImage}/>
+        <Image src={PeopleJob} alt='Pessoas felizes trabalhando' className={styles.peopleImage}/>
 
         <ExpSection />
       </div>
