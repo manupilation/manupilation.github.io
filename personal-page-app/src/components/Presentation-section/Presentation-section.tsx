@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './styles.module.scss';
 import eu from '../../../images/Eur.jpg';
+import Separator from "../Helper/Separator";
 
 function PresentationSection() {
   return (
@@ -13,7 +14,7 @@ function PresentationSection() {
         target="_blank"
         rel="external">Projetos</a>
       </article>
-      <span className={styles.separator}></span>
+      <Separator />
       <div className={styles.selfImage}>
         <img src={eu} alt="Foto de Manu"/> 
       </div>
