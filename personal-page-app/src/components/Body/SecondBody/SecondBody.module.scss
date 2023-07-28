@@ -1,0 +1,95 @@
+.mainSecondBody {
+  margin: 4rem auto;
+
+  .secondBodyWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+
+    .abordagemSection {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: var(--c-b1);
+      padding: 2rem;
+      border-radius: 4px;
+      max-width: 30%;
+
+      h2 {
+        font: var(--f-g-mon);
+        font-size: 1.6rem;
+        color: var(--c-y);
+        font-weight: 700;
+        max-width: 16ch;
+      }
+      
+      p {
+        font: .8rem monospace;
+        color: var(--c-yw);
+        line-height: 1.575rem;
+      }
+    }
+
+    .peopleImage {
+      border-radius: 4px;
+      img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .expSection {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: var(--c-b1);
+      padding: 2rem;
+      border-radius: 4px;
+      max-width: 30%;
+
+      h2 {
+        font: var(--f-g-mon);
+        font-size: 1.6rem;
+        color: var(--c-y);
+        font-weight: 700;
+      }
+      
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
+
+        li {
+          display: inline-block;
+          font: var(--f-ms-pop);
+          color: var(--c-yw);
+          margin-left: 1rem;
+          letter-spacing: .125rem;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: var(--c-y);
+            border-radius: 8px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .secondBodyWrapper {
+    flex-direction: column;
+
+    .abordagemSection, .expSection {
+      max-width: 100% !important;
+    }
+  }
+}
