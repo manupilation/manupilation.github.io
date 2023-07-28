@@ -33,8 +33,11 @@
 
     .peopleImage {
       border-radius: 4px;
+      width: 30%;
+
       img {
-        width: 400px;
+        border-radius: 4px;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
@@ -87,9 +90,20 @@
 @media (max-width: 950px) {
   .secondBodyWrapper {
     flex-direction: column;
+    align-items: center;
 
     .abordagemSection, .expSection {
-      max-width: 100% !important;
+      max-width: 80% !important;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .secondBodyWrapper {
+    .peopleImage {
+      width: 50% !important;
+      height: 50% !important;
     }
   }
 }
