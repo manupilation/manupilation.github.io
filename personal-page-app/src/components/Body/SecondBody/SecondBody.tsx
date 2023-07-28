@@ -7,8 +7,8 @@ import PeopleJob from '../../../../images/PeopleJob.png';
 
 const SecondBody = () => {
   return (
-    <main>
-      <div>
+    <main className={styles.mainSecondBody}>
+      <div className={styles.secondBodyWrapper}>
         <AbordagemSection />
 
         <Image src={PeopleJob} alt='Pessoas felizes trabalhando' className={styles.peopleImage}/>
