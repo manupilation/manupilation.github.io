@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../SecondBody.module.scss';
 
 export const exps = [
   'Back-end', 'Front-end', 'Modelagem de dados', 'Docker', 'Sistemas', 'Testes automatizados', 'Ux/Ui'
@@ -6,7 +7,7 @@ export const exps = [
 
 const ExpSection = () => {
   return (
-    <section>
+    <section className={styles.expSection}>
       <h2>Tenho experiência em:</h2>
       <ul>
         {
