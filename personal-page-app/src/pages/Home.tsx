@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header/Header";
 import MainContent from "../components/Main-content/Main-content";
-import Footer from "../components/Footer/Footer";
 import Head from "../Head";
+import SecondBody from "../components/Body/SecondBody/SecondBody";
+import AlfredoContent from "../components/Body/AlfredoContent/AlfredoContent";
 
 function HomePage() {
   return(
@@ -10,6 +10,8 @@ function HomePage() {
       {/* <Header /> */}
       <Head title="Boas vindas!"/>
       <MainContent />
+      <SecondBody />
+      <AlfredoContent />
       {/* <Footer /> */}
     </>
   )
