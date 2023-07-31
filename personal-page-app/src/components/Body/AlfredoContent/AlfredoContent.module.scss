@@ -6,6 +6,9 @@
   gap: 2rem;
   padding: 2rem;
   margin: 4rem auto;
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: opacity 0.3s ease;
 
   .catImage {
     display: flex;
@@ -29,6 +32,8 @@
   .alfredoArticle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     background-color: var(--c-b1);
     padding: 2rem;
@@ -83,7 +88,6 @@
 @media (max-width: 600px) {
   .mainAlfredo {
     grid-template-columns: 1fr;
-    gap: 3rem;
     padding: 1.5rem;
 
     .alfredoArticle {
