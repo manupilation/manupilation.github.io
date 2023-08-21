@@ -1,5 +1,13 @@
 [
   {
+    "title": "Deliveree",
+    "details": "Projeto full-stack construído em equipe de um e-commerce de bebidas e alimentos. Neste projeto, participei da modelagem do banco de dados, UX/UI, construção e testagem da API, Front-end React e integração API Client.",
+    "isDeployed": true,
+    "deploy": "https://delivery-app-eta.vercel.app/login",
+    "github": "https://github.com/manupilation/delivery-app",
+    "seeMore": ""
+  },
+  {
     "title": "Little Paws",
     "details": "Little Paws é uma rede social para animais. Nela, você pode postar fotos, interagir com outros pets e analisar seu engajamento.",
     "isDeployed": true,
