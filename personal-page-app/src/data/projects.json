@@ -16,6 +16,14 @@
     "seeMore": ""
   },
   {
+    "title": "Crypto-Wallet",
+    "details": "Aplicativo construido em Next.js para gerir e armazenar gastos em diferentes moedas. Testes E2E feitos em Cypress e Jest.",
+    "isDeployed": false,
+    "deploy": "",
+    "github": "https://github.com/manupilation/Little-Paws",
+    "seeMore": ""
+  },
+  {
     "title": "Shopping Cart",
     "details": "Projeto que utiliza Javascript e várias outras tecnologias. Possuindo integração com a API do Mercado Livre, Shopping-cart é capaz de simular um site de compras, buscar por produtos e armazená-los no carrinho.",
     "isDeployed": true,
