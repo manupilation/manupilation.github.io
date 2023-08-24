@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import styles from './ExperienceFilter.module.scss';
+import { experienceContext } from '../../context/experienceContext';
 
 const ExperienceFilter = () => {
-  const [isFront, setIsFront] = useState(true);
-  const [isBack, setIsBack] = useState(false);
+  const {isFront, isBack, setIsFront, setIsBack} = useContext(experienceContext);
 
   const verifyActiveStack = (): string => {
     if (isFront && isBack) return 'FULL';
