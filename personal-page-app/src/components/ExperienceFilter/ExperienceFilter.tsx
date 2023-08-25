@@ -33,26 +33,29 @@ const ExperienceFilter = () => {
   }
 
   return (
-    <section className={styles.expFilter} >
-      <div>
-        outside circle
+    <section className={styles.expFilter}>
+      <div className={styles.outsideCircle}>
         <div className={`${styles.middleCircle} ${verifyActiveStack()}`}>
-          middle circle
           <button
             type="button"
             onClick={(e) => setFullStack(e)}
-          >inside circle</button>
+            className={`${verifyActiveStack()}`}
+          ></button>
         </div>
       </div>
 
-      <div>
+      <div className={styles.buttonSection}>
         <button
           type="button"
           onClick={(e) => handleFront(e)}
+          className={`${styles.frontButton} ${isFront ? 'active' : ''}`}
         >FRONT-END</button>
         <button
           type="button"
           onClick={(e) => handleBack(e)}
+          className={`${styles.backButton} ${
+            isBack ? 'active' : ''
+          }`}
         >BACK-END</button>
       </div>
     </section>
