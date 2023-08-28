@@ -15,7 +15,7 @@ export const experienceContext = createContext<ExperienceContextTypes>(null!);
 
 const ExperienceContext = (props: ExperienceProps) => {
   const [isFront, setIsFront] = useState<boolean>(true);
-  const [isBack, setIsBack] = useState<boolean>(false);
+  const [isBack, setIsBack] = useState<boolean>(true);
 
   const experienceValue = {
     isFront,
