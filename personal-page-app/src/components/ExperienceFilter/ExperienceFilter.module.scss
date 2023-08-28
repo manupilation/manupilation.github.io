@@ -1,0 +1,151 @@
+.expFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 8rem;
+
+  .outsideCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 60%;
+
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: var(--c-b2);
+
+    .middleCircle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      z-index: 3;
+
+      &:global(.FRONT) {
+        background-color: var(--c-y);
+        animation: pulsingFront 2s infinite;
+      }
+
+      &:global(.BACK) {
+        background-color: var(--c-p);
+        animation: pulsingBack 2s infinite;
+      }
+
+      &:global(.FULL) {
+        animation: pulsingMiddleButton 2s infinite;
+      }
+
+      > button {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 4px solid var(--c-b2);
+
+        &:global(.FRONT) {
+          background-color: var(--c-p);
+        }
+
+        &:global(.BACK) {
+          background-color: var(--c-y);
+        }
+
+        &:global(.FULL) {
+          animation: pulsingInsideButton 2s infinite;
+        }
+      }
+    }
+  }
+
+  .buttonSection {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 28rem;
+    height: 5rem;
+    z-index: 1;
+
+    button {
+      font: var(--f-g-mon);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--c-b2);
+      width: 50%;
+      box-sizing: content-box;
+    }
+
+    .frontButton {
+      background-color: var(--c-y);
+      border-radius: 5rem 0 0 5rem;
+      border: solid .5rem var(--c-b2);
+      border-right: solid .25rem var(--c-b2);
+
+      &:global(.active) {
+        animation: pulsingFront 2s infinite;
+      }
+    }
+
+    .backButton {
+      background-color: var(--c-p);
+      border-radius: 0 5rem 5rem 0;
+      border: solid .5rem var(--c-b2);
+      border-left: solid .25rem var(--c-b2);
+
+      &:global(.active) {
+        animation: pulsingBack 2s infinite;
+      }
+    }
+  }
+}
+
+@keyframes pulsingFront {
+  0% {
+    background-color: var(--c-y);
+  }
+  50% {
+    background-color: var(--c-yo);
+  }
+  100% {
+    background-color: var(--c-y);
+  }
+}
+
+@keyframes pulsingBack {
+  0% {
+    background-color: var(--c-p);
+  }
+  50% {
+    background-color: #EE005C;
+  }
+  100% {
+    background-color: var(--c-p);
+  }
+}
+
+@keyframes pulsingMiddleButton {
+  0% {
+    background-color: var(--c-y);
+  }
+  50% {
+    background-color: var(--c-p);
+  }
+  100% {
+    background-color: var(--c-y);
+  }
+}
+
+@keyframes pulsingInsideButton {
+  0% {
+    background-color: var(--c-p);
+  }
+  50% {
+    background-color: var(--c-y);
+  }
+  100% {
+    background-color: var(--c-p);
+  }
+}

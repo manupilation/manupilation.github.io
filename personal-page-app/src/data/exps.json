@@ -1,0 +1,198 @@
+[
+  {
+    "id": 0,
+    "tech": "Linux",
+    "color": "#FFCD1E",
+    "contrastColor": false,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 1,
+    "tech": "Git",
+    "color": "#FC6A03",
+    "contrastColor": true,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 2,
+    "tech": "Docker",
+    "color": "#0492C2",
+    "contrastColor": false,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 3,
+    "tech": "Shell",
+    "color": "#204030",
+    "contrastColor": true,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 4,
+    "tech": "Javascript",
+    "color": "#FFCD1E",
+    "contrastColor": false,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 5,
+    "tech": "Typescript",
+    "color": "#2800C2",
+    "contrastColor": true,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 6,
+    "tech": "HTML5",
+    "color": "#FC6A03",
+    "contrastColor": true,
+    "stack": ["front"]
+  },
+  {
+    "id": 7,
+    "tech": "CSS3",
+    "color": "#63C5DA",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 8,
+    "tech": "Sass",
+    "color": "#FC46AA",
+    "contrastColor": true,
+    "stack": ["front"]
+  },
+  {
+    "id": 9,
+    "tech": "React",
+    "color": "#82EEFD",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 10,
+    "tech": "Redux",
+    "color": "#FF008E",
+    "contrastColor": true,
+    "stack": ["front"]
+  },
+  {
+    "id": 11,
+    "tech": "Next.js",
+    "color": "#F4F4F4",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 12,
+    "tech": "Jest",
+    "color": "#03AC13",
+    "contrastColor": true,
+    "stack": ["front", "back"]
+  },
+  {
+    "id": 13,
+    "tech": "Cypress",
+    "color": "#63C5DA",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 14,
+    "tech": "RTL",
+    "color": "#FC4C4E",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 15,
+    "tech": "Figma",
+    "color": "#FCBACB",
+    "contrastColor": false,
+    "stack": ["front"]
+  },
+  {
+    "id": 16,
+    "tech": "Node.js",
+    "color": "#3CB043",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 17,
+    "tech": "Express",
+    "color": "#FAFAFA",
+    "contrastColor": false,
+    "stack": ["back"]
+  },
+  {
+    "id": 18,
+    "tech": "Python",
+    "color": "#255074",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 19,
+    "tech": "Java",
+    "color": "#FF2035",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 20,
+    "tech": "SQL",
+    "color": "#FFFD1E",
+    "contrastColor": false,
+    "stack": ["back"]
+  },
+  {
+    "id": 21,
+    "tech": "MySQL",
+    "color": "#82EEFD",
+    "contrastColor": false,
+    "stack": ["back"]
+  },
+  {
+    "id": 22,
+    "tech": "MongoDB",
+    "color": "#32612D",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 23,
+    "tech": "Sequelize",
+    "color": "#1520A6",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 24,
+    "tech": "Prisma",
+    "color": "#63C5DA",
+    "contrastColor": false,
+    "stack": ["back"]
+  },
+  {
+    "id": 25,
+    "tech": "Mongoose",
+    "color": "#FC6A03",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 26,
+    "tech": "Mocha",
+    "color": "#964B00",
+    "contrastColor": true,
+    "stack": ["back"]
+  },
+  {
+    "id": 27,
+    "tech": "Chai",
+    "color": "#9E4244",
+    "contrastColor": true,
+    "stack": ["back"]
+  }
+]

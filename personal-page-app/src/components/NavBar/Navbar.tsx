@@ -36,7 +36,7 @@ function renderNavBar() {
       </button>
       <nav className={`${styles.navContainer} ${isActive ? "active" : ""}  animaDown`}>
         <ul className={styles.navList}>
-          <NavLink to="/exp">Experiência</NavLink>
+          <NavLink to="/experience">Experiência</NavLink>
           <NavLink to="/formacao">Formação</NavLink>
           <NavLink to="/projects">Projetos</NavLink>
           <NavLink to="/contact">Contato</NavLink>
