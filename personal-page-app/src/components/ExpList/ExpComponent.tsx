@@ -3,7 +3,6 @@ import experience from '../../types/ExpType';
 import Image from '../Helper/Image';
 import Icons from '../Helper/SvgImporter';
 
-
 const ExpComponent = (props: {exp: experience}) => {
   const {color, contrastColor, tech} = props.exp;
   const key = tech as keyof typeof Icons;
