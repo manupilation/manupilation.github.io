@@ -10,7 +10,7 @@
     "id": 1,
     "tech": "Git",
     "color": "#FC6A03",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["front", "back"]
   },
   {
@@ -23,7 +23,7 @@
   {
     "id": 3,
     "tech": "Shell",
-    "color": "#151E3D",
+    "color": "#204030",
     "contrastColor": true,
     "stack": ["front", "back"]
   },
@@ -37,7 +37,7 @@
   {
     "id": 5,
     "tech": "Typescript",
-    "color": "#2832C2",
+    "color": "#2800C2",
     "contrastColor": true,
     "stack": ["front", "back"]
   },
@@ -45,7 +45,7 @@
     "id": 6,
     "tech": "HTML5",
     "color": "#FC6A03",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["front"]
   },
   {
@@ -59,7 +59,7 @@
     "id": 8,
     "tech": "Sass",
     "color": "#FC46AA",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["front"]
   },
   {
@@ -73,7 +73,7 @@
     "id": 10,
     "tech": "Redux",
     "color": "#FF008E",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["front"]
   },
   {
@@ -87,7 +87,7 @@
     "id": 12,
     "tech": "Jest",
     "color": "#03AC13",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["front", "back"]
   },
   {
@@ -115,7 +115,7 @@
     "id": 16,
     "tech": "Node.js",
     "color": "#3CB043",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["back"]
   },
   {
@@ -128,14 +128,14 @@
   {
     "id": 18,
     "tech": "Python",
-    "color": "#051094",
+    "color": "#255074",
     "contrastColor": true,
     "stack": ["back"]
   },
   {
     "id": 19,
     "tech": "Java",
-    "color": "#1338BE",
+    "color": "#FF2035",
     "contrastColor": true,
     "stack": ["back"]
   },
@@ -178,7 +178,7 @@
     "id": 25,
     "tech": "Mongoose",
     "color": "#FC6A03",
-    "contrastColor": false,
+    "contrastColor": true,
     "stack": ["back"]
   },
   {
