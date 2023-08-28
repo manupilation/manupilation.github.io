@@ -27,10 +27,12 @@
 
       &:global(.FRONT) {
         background-color: var(--c-y);
+        animation: pulsingFront 2s infinite;
       }
 
       &:global(.BACK) {
         background-color: var(--c-p);
+        animation: pulsingBack 2s infinite;
       }
 
       &:global(.FULL) {
