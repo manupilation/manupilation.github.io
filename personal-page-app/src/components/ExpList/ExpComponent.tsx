@@ -10,7 +10,7 @@ const ExpComponent = (props: {exp: experience}) => {
   return (
     <div style={{backgroundColor: color}}>
       <Image src={defaultUrl} alt='tech image'/>
-      <p style={{color: contrastColor ? "#F4F4F4" : "#333"}}>
+      <p style={{color: contrastColor ? "#F4F4F4" : "#111"}}>
         {tech}
       </p>
     </div>
