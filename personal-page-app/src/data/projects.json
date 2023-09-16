@@ -18,8 +18,8 @@
   {
     "title": "Crypto-Wallet",
     "details": "Aplicativo construido em Next.js para gerir e armazenar gastos em diferentes moedas. Testes E2E feitos em Cypress e Jest.",
-    "isDeployed": false,
-    "deploy": "",
+    "isDeployed": true,
+    "deploy": "https://vercel.com/manupilation/crypt-wallet-with-next-and-cypress",
     "github": "https://github.com/manupilation/Little-Paws",
     "seeMore": ""
   },
