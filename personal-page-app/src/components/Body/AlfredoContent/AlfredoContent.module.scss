@@ -12,7 +12,7 @@
 
   .catImage {
     display: flex;
-    background: linear-gradient(10deg, #ff008e 0%, #ffcd1e 100%);
+    background: linear-gradient(10deg, var(--c-y) 0%, var(--c-p) 100%);
     border-radius: 50%;
     line-height: 0;
     width: calc(18rem);
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: var(--c-b1);
+    background-color: var(--c-b3);
     padding: 2rem;
     border-radius: 4px;
 
@@ -47,7 +47,7 @@
 
     p {
       font: .8rem monospace;
-      color: var(--c-yw);
+      color: var(--c-2);
       line-height: 1.500rem;
     }
   }

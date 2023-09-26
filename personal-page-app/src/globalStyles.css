@@ -5,7 +5,7 @@
 
 body {
   gap: 3rem;
-  background-color: #0081A7;
+  background-image: url("/public/background.svg");
 }
 
 img {
@@ -36,7 +36,7 @@ textarea {
   display: inline-block;
   width: 2px;
   height: 100%;
-  background-color: var(--c-b1);
+  background-color: var(--c-yw);
 }
 
 #root {

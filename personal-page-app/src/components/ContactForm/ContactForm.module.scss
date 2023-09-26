@@ -1,5 +1,5 @@
 .contactContainer {
-  background-color: var(--c-b1);
+  background-color: var(--c-b3);
   margin: 0 15%;
   padding: 2rem 2rem;
   border-radius: 5px;
@@ -96,7 +96,7 @@
       }
 
       .offSendButton {
-        background-color: var(--c-b2);
+        background-color: var(--c-b1);
         color: var(--c-yw);
         pointer-events: none;
       }
@@ -116,12 +116,16 @@
   position: relative;
   box-sizing: border-box;
 
+  textarea::placeholder {
+    color: var(--c-b1);
+  }
+
   input, textarea {
     display: block;
     padding: .4rem .8rem;
     font: var(--f-m-pop);
     width: 80%;
-    background-color: var(--c-b1);
+    background-color: var(--c-b3);
     border: none;
     border-bottom: solid 2px var(--c-0);
     margin: .2rem 0 .5rem 0;
@@ -206,6 +210,11 @@
       img {
         height: 30px;
         width: 30px;
+      }
+
+      &:nth-child(2) > img {
+        border: 2px solid var(--c-b1);
+        border-radius: 4px;
       }
     }
   }

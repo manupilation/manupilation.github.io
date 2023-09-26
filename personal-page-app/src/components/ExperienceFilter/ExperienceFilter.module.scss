@@ -15,7 +15,7 @@
     border-radius: 50%;
     width: 6.25rem;
     height: 6.25rem;
-    background-color: var(--c-b2);
+    background-color: var(--c-b1);
 
     .middleCircle {
       display: flex;
@@ -78,11 +78,14 @@
       box-sizing: content-box;
     }
 
+    .frontButton, .backButton {
+      border: solid .5rem var(--c-b1);
+    }
+
     .frontButton {
       background-color: var(--c-y);
       border-radius: 5rem 0 0 5rem;
-      border: solid .5rem var(--c-b2);
-      border-right: solid .25rem var(--c-b2);
+      border-right: solid .25rem var(--c-b1);
 
       &:global(.active) {
         animation: pulsingFront 2s infinite;
@@ -92,8 +95,7 @@
     .backButton {
       background-color: var(--c-p);
       border-radius: 0 5rem 5rem 0;
-      border: solid .5rem var(--c-b2);
-      border-left: solid .25rem var(--c-b2);
+      border-left: solid .25rem var(--c-b1);
 
       &:global(.active) {
         animation: pulsingBack 2s infinite;
