@@ -3,7 +3,9 @@
   width: 70%;
   margin: 0 15%;
   border-radius: 5px;
-  background-color: var(--c-b1);
+  background-color: var(--c-b3);
+  border: solid 2px var(--c-b1);
+  box-sizing: border-box;
 
   .cardContainer {
     position: relative;

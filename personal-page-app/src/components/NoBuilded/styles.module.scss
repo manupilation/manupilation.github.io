@@ -1,7 +1,7 @@
 .noBuildContainer {
   max-width: 800px;
   display: grid;
-  background-color: #1b263b;
+  background-color: var(--c-b3);
   padding: 2rem;
   border-radius: 4px;
   grid-template-columns: 320px auto;
@@ -16,7 +16,7 @@
 
   h3 {
     font-size: 2rem;
-    color: #ffcd1e;
+    color: var(--c-y);
     margin-bottom: 20px;
   }
 
@@ -29,7 +29,7 @@
   }
 
   .paragraph {
-    color: #fdfcdc;
+    color: var(--c-b2);
     grid-area: 2 / 1;
     place-self: center;
     max-width: 30ch;
@@ -37,24 +37,24 @@
     margin-bottom: 10px;
 
     a {
-      color: #ff008e;
+      color: var(--c-y);
     }
   }
 
   .hojipago {
-    color: #fdfcdc;
+    color: var(--c-b2);
     grid-area: 2 / 2;
     place-self: end;
 
     a {
-      color: #ff008e;
+      color: var(--c-y);
     }
   }
 
   .toBackButton {
     text-transform: uppercase;
     padding: .7rem 1.4rem;
-    background-color: #ffcd1e;
+    background-color: var(--c-y);
     place-self: center;
     border-radius: 4px;
     color: #222;
@@ -72,7 +72,7 @@
   }
 
   .toBackButton:hover {
-    background-color: #EEAA1E;
+    background-color: var(--c-yo);
   }
 }
 
